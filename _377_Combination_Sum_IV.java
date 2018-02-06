@@ -31,6 +31,7 @@ public class CombinationSumIV {
          输入：一组没有重复元素的正整数数组(int[] nums)，输出：和为Target的所有子集的个数。
          Note:子集元素顺序不同视为不同的组合，且子集内元素可以有重复。 
          Combination Sum 系列的最后一题，但是这里backtracking不是最优解，优先考虑DP.
+	 不同点：backtracking 方法 用到了 HashMap<Integer, Integer> 来存储中间值。
          掌握程度：backtracking 和 DP 都要掌握。
      
      思路：
