@@ -40,15 +40,15 @@ public class CombinationSumIV {
          DP-Case: 
          i = 1, num = 1, res[1] += res[0] = 1 
          i = 2, num = 1, res[2] += res[1] = 1
-				        num = 2, res[2] += res[0] = 2
+		num = 2, res[2] += res[0] = 2
          i = 2, num = 1, res[3] += res[0] = 1
-			        	num = 2, res[3] += res[1] = 2
+		num = 2, res[3] += res[1] = 2
                 num = 3, res[3] += res[2] = 4
          i = 3, num = 1, res[3] += res[2] = 2
                 num = 2, res[3] += res[1] = 3
                 num = 3, res[3] += res[0] = 4
          i = 4, num = 1, res[4] += res[3] = 4
-				        num = 2, res[4] += res[2] = 6
+		num = 2, res[4] += res[2] = 6
                 num = 3, res[4] += res[1] = 7
                 
      复杂度：
