@@ -1,4 +1,4 @@
- 题意：
+题意：
      给定一个包含重复数字的集合, 输出对应的所有全排列的组合
      和 46.Permutations异同
      1.1（异）  input元素可能是有重复的，output的结果是Unique的
@@ -14,8 +14,8 @@
        （Note：boolean used[] = true / boolean used[] = false 不同位置的理解 -> 一次赋值，一次更新值）
                     
 复杂度：
-      time : O(n!)
-      space : O(n)   
+     time : O(n!)
+     space : O(n)   
 
 
 public class PermutationsII {
