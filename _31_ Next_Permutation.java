@@ -36,15 +36,17 @@ public class NextPermutation {
                      Eg: 316. Remove Duplicate Letters(帮助理解按字典序排列的题)
              
      思路：
-         1，从
-       
-            backtracking        :  一维数组： boole 
-            backtracking        :  一维数组： boolean int[] 
-            
+         1，从后向前遍历，第一个满足：左边的数 nums[left = i] < 右边的数 nums[right = i+1], left的index就是firstsmall。
+         (Note:因为要比较最后2个数，i从nums.length - 2开始) 。这一步实现：字典序查找。
+         2，考虑2种情况 
+            case1:  input数组本身是deceasing排序，直接反转数组（或者直接Arrays.sort), 返回升序排列。
+            case2:  找到要和firstsmall进行交换的数位index -> 从后向前遍历，范围 [firstsmall + 1, nums.length) 左闭右开->firstlarge
+                    Note：在firstsmall 位之后，都是non-decreaing 排好的数，所以找到的最后一位的index，就是要交换的数的index
+         3, 交换实现字典序排列 ( swap(firstsmall ，firstlarge) ) + 实现firstsmall后面的升序排列（reverse / Arrays.sort ）
          
      复杂度：
-           time : O(n);
-           space : O(1);
+          time : O(n);
+          space : O(1);
 
      * @param nums
      */
