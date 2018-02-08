@@ -59,7 +59,8 @@ public class Permutations {
          res{(1,2,3), (1,3,2), (2,1,3), (2,3,1), (3,2,1)}
          list: 3,2,1 -> swap[index: 1,index: 2]: 3,1,2
          res{(1,2,3), (1,3,2), (2,1,3),(2,3,1), (3,2,1),(3,1,2)}
-     
+         
+       /* 给楼主: 麻烦帮忙看一下case的逻辑和结果，double-check 是对的 。 O(∩_∩)O谢谢 */
         
      复杂度：
          backtracking:
