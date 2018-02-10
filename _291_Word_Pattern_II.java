@@ -35,8 +35,8 @@ public class WordPatternII {
      复杂度：
           time : O(2^n) 
           space : O(n)
-     
-         /* time : O(2^n) 不确定？ */       
+    
+         /* time : O(2^n)这里不确定？LC-disscussion 说：for-loop works on “str”, not pattern. So, T(n) = O(2^n);*/       
          
      * @param pattern
      * @param str
