@@ -55,13 +55,14 @@ public class PermutationSequence {
             k % factorial[n - 1] -> k 位于 k / factorial[n - 1] 的下一个区块内，然后更新k值。
            （相当于 在 (x - 1)区间内，从第二位开始，依次从n,n-1,到1，重新调用，不断更新k值，直到找到所有的元素）        
          4，初始化的时候，根据n的大小构建list, 当元素从最高位向右移一位的时候，删除list里对应的最高位元素。
-         
-        
-     /*注：视频的时间复杂度有错，但已经在评论处更正*/ 
      
      复杂度：
          time : O(n^2)
-         space : O(n)   
+         space : O(n)     
+         
+        
+     /*注：视频的时间复杂度有错，但已经在评论处更正*/ 
+    
 
      * @param n
      * @param k
